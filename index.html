@@ -24,7 +24,7 @@
    
     <div class="navbar bg-base-100 justify-around bg-fuchsia-50 sticky top-0">
         <div class="">
-         <button class="btn btn-accent">Blog</button> 
+         <button class="btn btn-accent" id="blog-btn">Blog</button> 
         </div>
         <div class="flex-row gap-2">
             <img src="assets/logo.png" alt="">
@@ -41,7 +41,7 @@
 <div class="justify-center container mx-auto">
     <div>
     <button class="btn btn-accent" id="donate-btn">Donation</button>
-    <button class="btn btn-accent" id="historyBtn">History</button>
+    <button class="btn btn-accent" id="history-btn">History</button>
     </div>
 </div>
 
@@ -122,10 +122,18 @@
       </div>
  </section>
 </div>
+<div id="history" class="hidden">
+  
+  <div id="history-container">
+
+
+  </div>
+</div>
+
  
     </main>
    <script src="js/donation.js"></script>
  <script src="js/button.js"></script>
-    
+    <script src="js/showSection.js"></script>
 </body>
 </html>

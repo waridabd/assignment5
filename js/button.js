@@ -1,4 +1,14 @@
 document.getElementById('donate-btn').addEventListener('click',function(){
-    document.getElementById('donation-div') .classList.remove('hidden');
+    showSection('donation-div');
+   
     
 });
+
+document.getElementById('history-btn').addEventListener('click',function(){
+    showSection('history');
+   
+    
+});
+document.getElementById('blog-btn').addEventListener('click',function(){
+window.location.href="blog.html"
+})

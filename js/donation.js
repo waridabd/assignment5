@@ -34,6 +34,17 @@ document.getElementById('donate-feni-btn').addEventListener('click',function(eve
     const newAmount=parseFloat(totalAmount);
     const newTotal=newAmount-donateMoney;
     document.getElementById('total-amount').innerText=newTotal;
+    const div=document.createElement('div');
+    div.classList.add('border-2');
+    div.innerHTML=`
+   <h1 class="text-2xl font-semibold">${donateMoney} Taka is Donated for Donate for Flood in Feni, Bangladesh /h1>
+
+    `
+    
+
+    
+document.getElementById('history-container').appendChild(div);
+
   }
   else{
     alert("Invalid Amount");
